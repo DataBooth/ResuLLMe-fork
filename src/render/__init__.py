@@ -2,6 +2,7 @@ import tempfile
 import subprocess
 import os
 import shutil
+from pathlib import Path
 
 
 def render_latex(latex_command, latex_data):
@@ -15,6 +16,9 @@ def render_latex(latex_command, latex_data):
         with open(f"{tmpdirname}/resume.tex", "w") as f:
             f.write(latex_data)
 
+        with open(f"{Path.cwd().as_posix()}/resume.tex", "w") as f:
+            f.write(latex_data)
+  
         # run latex command
         latex_process = subprocess.Popen(latex_command, cwd=tmpdirname)
         latex_process.wait()

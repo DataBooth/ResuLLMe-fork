@@ -33,11 +33,17 @@ if __name__ == '__main__':
 
     uploaded_file = st.file_uploader("Choose a file", type=["pdf", "docx", "txt", "json"])
 
+    st.write(uploaded_file)
+
     template_options = list(template_commands.keys())
 
     if uploaded_file is not None:
         # Get the CV data that we need to convert to json
         text = extract_text_from_upload(uploaded_file)
+
+        assert text is not None
+        st.write(text)
+        print(f"Text: {text}")
 
         # If the OpenAI API Key is not set as an environment variable, prompt the user for it
         openai_api_key = os.getenv("OPENAI_API_KEY")
@@ -62,6 +68,8 @@ if __name__ == '__main__':
         improve_check = st.checkbox("I want to improve the resume with LLMs", value=True)
 
         generate_button = st.button("Generate Resume")
+
+        st.write(text)
 
         if generate_button:
             try:

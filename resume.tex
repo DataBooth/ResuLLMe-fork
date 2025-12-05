@@ -1,0 +1,168 @@
+\documentclass[a4paper]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\textheight=10in
+\pagestyle{empty}
+\raggedright
+\usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+%\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME 
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+% END RESUME DEFINITIONS
+
+\begin{document}
+\vspace*{-40pt}
+
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+  {\Huge \scshape {Michael J. Booth}}\\
+   Drummoyne, NSW 2047 $\cdot$    michael@databooth.com.au $\cdot$    +61 422 149 355 $\cdot$   \
+\end{center}
+
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+ \textbf{DataBooth}  
+ \hfill Sydney, NSW \\
+ \textit{Founder}  
+\hfill
+ 04/2021 -  Current \\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Contracted with Macquarie Bank as Technical Product Owner for a novel high{-}performance calculation engine used for risk management and regulatory reporting
+    \item Developed a business model for cost{-}effective analytic solutions to small/medium businesses
+    \item Assisted not{-}for{-}profits with reporting and compliance requirements
+    \item Selected and deployed necessary IT infrastructure for pilot projects
+    \item Prototyped startup ideas for community promotion using church properties
+\end{itemize}
+
+ \textbf{ASIC}  
+ \hfill Sydney, NSW \\
+ \textit{Senior Analytics Specialist}  
+\hfill
+ 11/2019 -  10/2020 \\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Led the development of a datamart and dashboard app using AFCA complaints data to provide insights into the financial complaints landscape
+    \item Managed a team of 5 to identify opportunities for data analytics in business problem{-}solving
+    \item Optimized business processes through data analytics deployment, including intelligent digitization using NLP
+    \item Provided expert feedback on data science components of new data lake solution
+    \item Established reproducible and transparent analytic development practices
+\end{itemize}
+
+ \textbf{Commonwealth Bank}  
+ \hfill Sydney, NSW \\
+ \textit{Senior Data Scientist}  
+\hfill
+ 08/2018 -  08/2019 \\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Developed AI model risk governance framework for automated identification of systemic complaints
+    \item Analyzed Bank{-}wide staff survey results to improve workforce engagement
+    \item Managed operational risk for Data Science team, focusing on AI model governance and security
+    \item Collaborated with stakeholders to gather analytical requirements
+    \item Mentored and coached junior data scientists
+\end{itemize}
+
+ \textbf{Westpac Banking Corporation}  
+ \hfill Sydney, NSW \\
+ \textit{Senior Manager, Balance Sheet Quality (Insights)}  
+\hfill
+ 12/2017 -  06/2018 \\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Developed a novel deposit forecasting model to increase revenues
+    \item Evaluated and enhanced existing Excel/VBA models
+    \item Increased team's awareness of enterprise data warehouse resources
+    \item Assessed fitness for purpose of vendor analytic offerings
+    \item Conducted prototyping work with interim data science platform
+\end{itemize}
+
+
+
+
+%==== Skills ====%
+\header{Skills}
+\begin{tabular}{ l l }
+	    Analytical Skills: & end{-}to{-}end data analytics, data{-}driven decision{-}making, data engineering, analysis and visualization\\
+        Machine Learning: & NLP, computer vision, time series, regression\\
+        Data Science Tools: & Python, SQL, cloud computing, data science platforms\\
+        Project Management: & stakeholder engagement, project management, business requirements, mentoring\\
+    \end{tabular}
+\vspace{2mm}
+
+
+%==== Projects ====%
+\header{Projects}
+ {\textbf{Novel High{-}performance Calculation Engine}} {\sl risk management, regulatory reporting, IT infrastructure, prototyping, community promotion } 
+\hfill 
+\\
+ Developed a novel high{-}performance calculation engine used for risk management and regulatory reporting at Macquarie Bank. The project involved the selection and deployment of necessary IT infrastructure and prototyping startup ideas for community promotion using church properties. \\
+\vspace*{2mm}
+ {\textbf{AFCA Complaints Dashboard App}} {\sl AFCA complaints data, datamart, dashboard app, financial complaints, data analytics deployment, business processes optimization } 
+\hfill 
+\\
+ Led the development of a datamart and dashboard app using AFCA complaints data at ASIC. The project provided insights into the financial complaints landscape and optimized business processes through data analytics deployment. \\
+\vspace*{2mm}
+
+
+
+%==== Awards ====%
+\header{Awards}
+\textbf{Employee of the Month}\hfill
+ASIC \\
+Recognized for exceptional performance and contributions to data analytics projects.\hfill
+03/2020\\
+\vspace*{2mm}
+\textbf{Outstanding Achievement Award}\hfill
+Commonwealth Bank \\
+Acknowledged for developing an innovative AI model risk governance framework.\hfill
+07/2019\\
+\vspace*{2mm}
+\textbf{Excellence in Analytic Development Award}\hfill
+Westpac Banking Corporation \\
+Honored for the implementation of a novel deposit forecasting model.\hfill
+02/2018\\
+\vspace*{2mm}
+
+
+
+%==== Education ====%
+\header{Education}
+ \textbf{The University of Sydney}  
+ \hfill Sydney, NSW \\
+ Ph.D.   in Theoretical Chemistry  \hfill
+\\
+\vspace{2mm}
+ \textbf{The University of Sydney}  
+ \hfill Sydney, NSW \\
+ B.Sc. (First Class Honours)   in Pure Mathematics and Chemistry  \hfill
+\\
+\vspace{2mm}
+
+
+
+\end{document}
